@@ -1,15 +1,17 @@
-<h2>Por Capital</h2>
-<hr>
+<div class="animate__animated animate__fadeIn">
+    <h2>Por Capital</h2>
+    <hr>
 
-<div class="row">
-    <div class="col">
-        <app-pais-input placeholder="Buscar por capital..."
-            (onEnter)="buscar( $event )"
-            (onDebounce)="sugerencias( $event )"></app-pais-input>
+    <div class="row">
+        <div class="col">
+            <app-pais-input placeholder="Buscar por capital..."
+                (onEnter)="buscar( $event )"
+                (onDebounce)="sugerencias( $event )"></app-pais-input>
+        </div>
     </div>
-</div>
 
-<hr>
+    <hr>
+</div>
 
 <app-pais-error [termino]="termino" [hayError]="hayError"></app-pais-error>
 
